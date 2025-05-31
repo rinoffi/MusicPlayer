@@ -25,10 +25,10 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None)
-        self.API_HASH: str = os.environ.get("API_HASH", None)
-        self.SESSION: str = os.environ.get("SESSION", None)
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
+        self.API_ID: str = os.environ.get("28015531", None)
+        self.API_HASH: str = os.environ.get("2ab4ba37fd5d9ebf1353328fc915ad28", None)
+        self.SESSION: str = os.environ.get("BQGdbJEApyW1zYFxh14jXUVHCeA8o288AwFKZIj7Z2a14_WZcnIDGJCubrKP7ZgO3U6HiyE-znh878ljIj62TvLxXAg5C-XNttPNdgTzR0CVoGdDPYbC8yY-TU2PRCJ2ZmBt5zdVama4FONc0oB5EITueu5r>", None)
+        self.BOT_TOKEN: str = os.environ.get("7965807385:AAFZiAyeZ4-tbWcw_bgDGwO-gx2Dr1A4x74", None)
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
         ]
@@ -45,8 +45,8 @@ class Config:
             else "video"
         )
         self.ADMINS_ONLY: bool = os.environ.get("ADMINS_ONLY", False)
-        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", None)
-        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("SPOTIFY_CLIENT_SECRET", None)
+        self.SPOTIFY_CLIENT_ID: str = os.environ.get("9bf74d1552e5448fa7ae9dce8ab4d909", None)
+        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("792c7bb10e82450486a527acbc6f896e", None)
 
 
 config = Config()
